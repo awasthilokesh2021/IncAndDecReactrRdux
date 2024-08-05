@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React, { useState } from "react";
+import Cart from "./components/Home/Cart";
+//import Home from "./components/Home/Home";
+
+const App = () => {
+  // const [value, setvalue] = useState("hello world");
+  // const item = () => {
+  //   setvalue("hyy i'm here");
+  // };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Home store={value} item={item} /> */}
+      <Cart />
     </div>
   );
-}
+};
 
 export default App;
